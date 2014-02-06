@@ -7,7 +7,7 @@ In this particular program the intention was to experiment with dynamic screen c
 
 subsequent attachment of the generated image to the mail and its transfer through GMail SMTP 
 
-gateway programmatically by means of GMail's mail.jar
+gateway programmatically by means of GMail's >mail.jar
 
 The program is going to be further enhanced to capture the voice and video at arbitrary times, 
 
