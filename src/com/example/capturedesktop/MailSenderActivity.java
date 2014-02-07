@@ -66,7 +66,7 @@ public class MailSenderActivity extends Activity {
                        
             //now attach the file to mail and send
          	
-         	GMailSender sender = new GMailSender("defcon.fused@gmail.com", "realtehluke"); //sent=0
+         	GMailSender sender = new GMailSender("defcon.fused@gmail.com", "xxxxxxxxxx"); //sent=0
              
          	new Thread(new MailSendRunnable(sender, textbody)).start();
          	
