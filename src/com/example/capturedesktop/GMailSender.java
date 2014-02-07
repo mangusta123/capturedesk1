@@ -1,4 +1,4 @@
-package com.example.capturedesktop;
+package com.example.trollfacingpro;
 
 import javax.activation.DataHandler;   
 import javax.activation.DataSource;   
@@ -14,6 +14,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 import android.os.Environment;
+import android.util.Log;
 
 import java.io.ByteArrayInputStream;   
 import java.io.IOException;   
@@ -28,6 +29,8 @@ public class GMailSender extends javax.mail.Authenticator {
     private String password;   
     private Session session;   
 
+            int sent;
+    
     static {   
         Security.addProvider(new com.example.trollfacingpro.JSSEProvider());   
     }  
@@ -35,7 +38,8 @@ public class GMailSender extends javax.mail.Authenticator {
     public GMailSender(String user, String password) {   
         this.user = user;   
         this.password = password;   
-
+        this.sent = 0;
+        
         Properties props = new Properties();   
         props.setProperty("mail.transport.protocol", "smtp");   
         props.setProperty("mail.host", mailhost);   
@@ -76,9 +80,9 @@ public class GMailSender extends javax.mail.Authenticator {
        
         message.setContent(multipart);
         
-        Transport.send(message);   
+        Transport.send(message);   sent = 1;
         }catch(Exception e){
-
+         Log.e("gmailsender", "error occured: "+e.toString()); 
         }
     }   
 
