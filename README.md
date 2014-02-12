@@ -1,23 +1,23 @@
 capturedesk1
 ============
 
-Experimentation with spy screen capture and transfer through Gmail gateway to the attacker
+Experimentation with trojan spy screen capture and transfer through Gmail gateway to the attacker
 
 In this particular program the intention was to experiment with dynamic screen capture and 
 
-subsequent attachment of the generated image to the mail and its transfer through GMail SMTP 
+subsequent attachment of the generated image to the mail followed by its transfer through GMail SMTP 
 
 gateway programmatically by means of GMail's mail.jar
 
-The program is going to be further enhanced to capture the voice and video at arbitrary times, 
+The program is going to be further enhanced to capture the voice and video at arbitrary times, ideally 
 
-ideally on reception of a particular command from attacker.
+upon reception of a particular command from attacker.
 
-One significant drawback of GMail's JAR library was the fact that the generated attachment is not able to
+One significant drawback of GMail's JAR library was the fact that the generated attachment is not able 
 
-pass through some well-known mail gateways, including Hotmail (attachment is lost). Alternatively some 
+to pass through some well-known mail gateways, including Hotmail (attachment is lost). Alternatively 
 
-services work without any problem e.g. russian Mail.ru
+some services work without any problem e.g. russian Mail.ru
 
 One possible explanation:
 
