@@ -1,4 +1,4 @@
-package com.example.trollfacingpro;
+package com.example.capturedesktop;
 
 import javax.activation.DataHandler;   
 import javax.activation.DataSource;   
