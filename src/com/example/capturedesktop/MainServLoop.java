@@ -1,4 +1,4 @@
-package com.example.trollfacingpro;
+package com.example.capturedesktop;
 
 import java.io.BufferedReader;
 import java.io.IOException;
